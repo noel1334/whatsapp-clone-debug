@@ -6,6 +6,7 @@
   cursor: pointer;
   color: var(--text);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 .chat-list-item:hover {
@@ -38,3 +39,4 @@
   color: var(--dark-gray);
   font-size: 0.8em;
 }
+

@@ -1,5 +1,7 @@
+
 .search-bar {
   padding: 10px;
+  margin-right: 10px;
   background-color: var(--background);
   color: var(--text);
 }
@@ -10,4 +12,11 @@
   border: none;
   border-radius: 5px;
   background-color: var(--light-gray);
+  color: black; 
+}
+
+/* Dark mode styles */
+body.dark-mode .search-bar input {
+  background-color: var(--dark-secondary);
+  color: var(--dark-text); /* Set text color to white in dark mode */
 }

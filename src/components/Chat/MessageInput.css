@@ -12,7 +12,13 @@
   border: none;
   border-radius: 5px;
   background-color: var(--light-gray);
+  color: black;
   margin: 0 10px;
+}
+
+body.dark-mode .message-input input {
+  background-color: var(--dark-secondary);
+  color: white;
 }
 
 .icon-button {
@@ -23,6 +29,10 @@
   margin: 0;
   font-size: 24px;
   color: var(--dark-gray);
+}
+
+body.dark-mode .icon-button {
+  color: var(--dark-text);
 }
 
 .icon-button:hover {

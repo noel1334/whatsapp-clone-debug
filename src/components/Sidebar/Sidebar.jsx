@@ -14,14 +14,13 @@ const Sidebar = ({ isSidebarOpen }) => {
         <ChatListItem
           name="John Doe"
           lastMessage="Hey there!"
-          timestamp="Yesterday"
+          timestamp="12/31/2023 23:59"
         />
         <ChatListItem
           name="Jane Smith"
           lastMessage="Okay, see you later."
-          timestamp="2 days ago"
+          timestamp="12/31/2023 23:59"
         />
-        {/* Add more ChatListItems here */}
       </div>
     </aside>
   );

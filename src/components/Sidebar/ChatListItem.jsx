@@ -1,4 +1,3 @@
-import React from "react";
 import "./ChatListItem.css";
 import { formatDate } from "../../utils/dateFormatting";
 

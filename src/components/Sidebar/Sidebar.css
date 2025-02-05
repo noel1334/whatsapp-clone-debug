@@ -11,6 +11,7 @@
 .chat-list {
   overflow-y: auto;
   flex-grow: 1;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 @media (max-width: 768px) {
@@ -24,7 +25,11 @@
     transform: translateX(-100%);
     box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
   }
-
+  .chat-list {
+    overflow-y: auto;
+    flex-grow: 1;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
   .sidebar.open {
     transform: translateX(0);
   }

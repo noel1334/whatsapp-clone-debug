@@ -1,34 +1,24 @@
+// src/utils/dateFormatting.js
+import { format, isValid } from "date-fns";
+
+// Function to format a date into a human-readable string
 export const formatDate = (dateString) => {
-  const date = new Date(dateString); // Convert the string to a Date object
-  const now = new Date();
+  let date;
 
-  const diffInDays = Math.floor((now - date) / (1000 * 60 * 60 * 24)); // Calculate the difference in days
-
-  if (diffInDays === 0) {
-    // Today: Show the time
-    const hours = date.getHours().toString().padStart(2, "0");
-    const minutes = date.getMinutes().toString().padStart(2, "0");
-    return `${hours}:${minutes}`;
-  } else if (diffInDays === 1) {
-    // Yesterday
-    return "Yesterday";
-  } else if (diffInDays < 7) {
-    // Within the last week: Show the day of the week
-    const daysOfWeek = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    return daysOfWeek[date.getDay()];
+  // 1. Handle Date Objects and Strings
+  if (typeof dateString === "string") {
+    date = new Date(dateString);
+  } else if (dateString instanceof Date) {
+    date = dateString;
   } else {
-    // Older than a week: Show the date in a simple format (e.g., MM/DD/YYYY)
-    const month = (date.getMonth() + 1).toString().padStart(2, "0"); // Months are 0-indexed
-    const day = date.getDate().toString().padStart(2, "0");
-    const year = date.getFullYear();
-    return `${month}/${day}/${year}`;
+    return "Invalid Date"; // Handle cases where input is not a string or Date object
   }
+
+  // 2. Validate the Date
+  if (!isValid(date)) {
+    return "Invalid Date";
+  }
+
+  // Use a consistent date and time format
+  return format(date, "MM/dd/yyyy HH:mm"); // e.g., "12/31/2023 23:59"
 };

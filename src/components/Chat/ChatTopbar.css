@@ -1,12 +1,13 @@
+/* src/components/Chat/ChatTopbar.css */
 .chat-topbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
-  background-color: var(--background);
+  padding: 10px 15px;
+  /* background-color: var(--background); */
+  background-color: var(--primary-color);
+  color: var(--dark-text);
   color: var(--text);
-  border-bottom: 1px solid var(--light-gray);
-  padding-bottom: 10px;
 }
 
 .toggle-menu-button {
@@ -16,5 +17,9 @@
   padding: 0;
   margin: 0;
   font-size: 24px;
-  color: var(--dark-gray);
+  color: var(--text); /* Use the appropriate text color */
+}
+
+.toggle-menu-button:hover {
+  opacity: 0.7; /* Add a hover effect */
 }
