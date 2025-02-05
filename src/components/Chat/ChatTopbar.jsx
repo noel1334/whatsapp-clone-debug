@@ -1,4 +1,3 @@
-// src/components/Chat/ChatTopbar.jsx
 import React from "react";
 import "./ChatTopbar.css";
 import { GiHamburgerMenu } from "react-icons/gi"; // Import menu icon

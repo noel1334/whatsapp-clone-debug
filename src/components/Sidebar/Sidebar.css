@@ -1,30 +1,31 @@
 .sidebar {
   width: 350px;
-  background-color: var(--background-color);
+  background-color: var(--background);
+  color: var(--text);
   border-right: 1px solid var(--light-gray);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease-in-out;
-  }
-  
-  .chat-list {
+}
+
+.chat-list {
   overflow-y: auto;
   flex-grow: 1;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
   .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 1000;
-  width: 80%;
-  transform: translateX(-100%);
-  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    width: 80%;
+    transform: translateX(-100%);
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
   }
-  
+
   .sidebar.open {
-  transform: translateX(0);
+    transform: translateX(0);
   }
 }

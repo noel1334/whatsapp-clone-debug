@@ -1,4 +1,3 @@
-// src/components/Chat/Chat.jsx
 import React from "react";
 import ChatHeader from "./ChatHeader";
 import Message from "./Message";

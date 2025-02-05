@@ -3,17 +3,18 @@
   justify-content: flex-end;
   align-items: center;
   padding: 5px 10px;
-  background-color: var(--background-color);
+  background-color: var(--background);
+  color: var(--text);
   border-bottom: 1px solid var(--light-gray);
   padding-bottom: 10px;
-  }
-  
-  .toggle-menu-button {
+}
+
+.toggle-menu-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   margin: 0;
   font-size: 24px;
-  color: var(--text-primary);
-  }
+  color: var(--dark-gray);
+}

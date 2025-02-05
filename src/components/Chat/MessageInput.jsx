@@ -1,3 +1,4 @@
+import React from "react";
 import "./MessageInput.css";
 import { IoMdSend } from "react-icons/io"; // Example: Ionicons Send icon
 import { IoMdAttach } from "react-icons/io"; // Example: Ionicons Attach icon

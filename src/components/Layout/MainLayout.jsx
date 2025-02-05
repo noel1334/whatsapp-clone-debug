@@ -1,4 +1,3 @@
-// src/components/Layout/MainLayout.jsx
 import React, { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Chat from "../Chat/Chat";
