@@ -1,0 +1,32 @@
+.message {
+  margin-bottom: 10px;
+  display: flex;
+  }
+
+  .message.outgoing {
+  justify-content: flex-end;
+  }
+
+  .message.outgoing .message-content {
+  background-color: var(--message-outgoing);
+  color: var(--text-primary);
+  }
+
+  .message.incoming {
+  justify-content: flex-start;
+  }
+
+  .message .message-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: inline-block;
+  max-width: 80%;
+  word-break: break-word;
+  }
+
+  .message .timestamp {
+  font-size: 0.7em;
+  color: var(--dark-gray);
+  margin-left: 5px;
+  }

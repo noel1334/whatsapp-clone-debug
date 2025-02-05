@@ -1,0 +1,28 @@
+/* src/styles/variables.css */
+
+/* Primary Colors */
+:root {
+    --primary-color: #075e54; /* WhatsApp green */
+    --secondary-color: #128c7e; /* Lighter WhatsApp green */
+    --light-gray: #d1d7db; /* Light gray for borders and backgrounds */
+    --dark-gray: #8696a0; /* Darker gray for text and icons */
+    --background-color: #f0f2f5; /* Main background color */
+    --message-outgoing: #dcf8c6; /* Background color for outgoing messages */
+  
+    /* Text Colors */
+    --text-primary: #222; /* Primary text color (dark) */
+    --text-secondary: var(--dark-gray); /* Secondary text color (lighter) */
+  
+    /* Dark Theme Colors */
+    --dark-background: #121212; /* Dark background color */
+    --dark-text: #ffffff; /* Dark theme text color */
+    --dark-secondary: #212121; /* Dark secondary background */
+  
+    /* Breakpoints (Consistent with Mixins) */
+    --breakpoint-md: 768px; /* Medium screen breakpoint */
+    --breakpoint-lg: 992px; /* Large screen breakpoint */
+  
+    /* Other */
+    --border-radius: 5px; /* Standard border radius */
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Subtle box shadow */
+  }

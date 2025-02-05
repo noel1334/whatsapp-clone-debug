@@ -1,0 +1,26 @@
+.main-layout {
+  display: flex;
+  height: 100vh;
+  }
+
+
+/* Style the toggle menu button */
+.toggle-menu-button {   /* Updated class name */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: var(--text); /* Use the appropriate text color */
+    z-index: 1001; /* Ensure it's above the sidebar */
+}
+
+@media (min-width: 769px) { /* Hidden on larger screens */
+    .toggle-menu-button {
+    display: none;
+    }
+}

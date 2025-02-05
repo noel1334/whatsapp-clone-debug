@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #075e54;
+  --secondary-color: #128c7e;
+  --light-gray: #d1d7db;
+  --dark-gray: #8696a0;
+  --background-color: #f0f2f5;
+  --message-outgoing: #dcf8c6;
+  --text-primary: #222;
+  --text-secondary: var(--dark-gray);
+  --dark-background: #121212;
+  --dark-text: #ffffff;
+  --dark-secondary: #212121;
+}
+.App {
+  height: 100vh;
+  width: 100vw; /* Take up the full viewport width */
+}
+
+body {
+  --background: var(--background-color);
+  --text: black;
+}
+
+/* Apply dark mode styles conditionally */
+body.dark-mode {
+  --background: var(--dark-background);
+  --text: white;
+  background-color: var(--dark-background); 
+  color: var(--dark-text); 
+}

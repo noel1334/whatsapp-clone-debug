@@ -1,0 +1,18 @@
+/* src/styles/mixins.css */
+
+/* Responsive Mixin (Media Queries) */
+/* In CSS, we can't create mixins. We'll have to use media queries directly */
+
+/* Transitions */
+/* We can define CSS variables for transition properties */
+:root {
+  --transition-duration: 0.3s;
+  --transition-easing: ease-in-out;
+}
+
+/* Box Shadow */
+/* We can define a CSS variable for box shadow */
+/* In CSS, we can't have mixins so use variables directly */
+
+/* Font Size */
+/* We can't have mixins in CSS, so manage font sizes directly */
